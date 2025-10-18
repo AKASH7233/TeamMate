@@ -1,0 +1,85 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Database files
+*.db
+*.sqlite
+
+# Uploads directory
+uploads/
+public/uploads/
+
+# Session store
+sessions/
+
+# Temporary files
+tmp/
+temp/
+
+# Build files
+build/
+dist/
+
+# VS Code
+.vscode/
+
+# GitHub workflows and settings (keep local only)
+.github/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# MongoDB connection files
+*.mongodb
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+
+# Test files
+test-results/
+coverage/
+
+# Cache
+.cache/

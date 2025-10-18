@@ -1,0 +1,35 @@
+{
+  "name": "taskmate-project",
+  "version": "1.0.0",
+  "description": "MERN Stack Task Management System with AI Assistant",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd client && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../client && npm install",
+    "git-setup": "node scripts/git-setup.js",
+    "auto-commit": "node scripts/auto-commit.js",
+    "auto-commit:start": "npm run auto-commit",
+    "auto-commit:background": "nohup node scripts/auto-commit.js > auto-commit.log 2>&1 &",
+    "push-all": "git add . && git commit -m \"[Chore] batch update\" && git push",
+    "setup": "npm run install-all && npm run git-setup && npm run auto-commit:start"
+  },
+  "keywords": [
+    "mern",
+    "task-management",
+    "ai-assistant",
+    "react",
+    "nodejs",
+    "mongodb",
+    "gemini-ai"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
