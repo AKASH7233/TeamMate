@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: taskmate-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    # Note: Add your environment variables in Render Dashboard:
+    # - MONGO_URI (your MongoDB connection string)
+    # - ACCESS_TOKEN_SECRET
+    # - REFRESH_TOKEN_SECRET  
+    # - GEMINI_API_KEY
+    # - DB_NAME
