@@ -17,10 +17,10 @@ function App() {
                     <div className="App min-h-screen bg-dark-950 text-slate-100">
                         <Toaster
                             position="top-center"
-                            containerClassName="!top-4 !left-4 !right-4 !max-w-none sm:!top-6 sm:!left-auto sm:!right-6 sm:!max-w-sm"
+                            containerClassName="!fixed !top-4 !left-1/2 !transform !-translate-x-1/2 !z-[9999] !max-w-sm !w-full !px-4"
                             toastOptions={{
                                 duration: 4000,
-                                className: '!bg-slate-800 !text-slate-100 !border-slate-600 !shadow-2xl !rounded-xl !p-4 !text-sm sm:!text-base !max-w-full sm:!max-w-sm',
+                                className: '!bg-slate-800 !text-slate-100 !border-slate-600 !shadow-2xl !rounded-xl !p-4 !text-sm !max-w-full !mx-auto !z-[9999]',
                                 style: {
                                     background: '#1e293b',
                                     color: '#e2e8f0',
@@ -30,6 +30,10 @@ function App() {
                                     padding: '12px 16px',
                                     fontSize: '14px',
                                     lineHeight: '1.4',
+                                    zIndex: 9999,
+                                    position: 'relative',
+                                    maxWidth: '100%',
+                                    margin: '0 auto',
                                 },
                                 success: {
                                     iconTheme: {
